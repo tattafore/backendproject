@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: process.env.URL_FRONTEND || 'http://localhost:4200'
+    origin: 'https://frontendproject-wheat.vercel.app/' || 'http://localhost:4200'
 }));
 app.use('/api/usuarios',require ('./routes/usuario.routes'));
 app.use('/api/empleados',require ('./routes/empleado.routes'));
